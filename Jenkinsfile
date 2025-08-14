@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NODEJS_HOME = tool name: 'NodeJS18', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+        NODEJS_HOME = tool name: 'nodejs', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
         DEPLOY_PATH = 'C:\\deploy\\reactapp'  // Change to your preferred folder
     }
 
@@ -24,7 +24,7 @@ pipeline {
         stage('Build React App') {
             steps {
                 echo "Building React app..."
-                bat 'npm run build'
+                bat 'npm start'
             }
         }
 
