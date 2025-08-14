@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Cloning React app from GitHub..."
-                git branch: 'main', url: 'https://github.com/username/my-react-app.git'
+                git branch: 'main', url: 'https://github.com/swapnshweta/react-jenkins-demo.git'
             }
         }
 
