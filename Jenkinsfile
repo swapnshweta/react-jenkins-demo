@@ -24,7 +24,7 @@ pipeline {
         stage('Build React App') {
             steps {
                 echo "Building React app..."
-                bat 'npm start'
+                bat 'npm run build'
             }
         }
 
